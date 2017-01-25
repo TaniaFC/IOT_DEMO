@@ -22,7 +22,7 @@ class Arduino:
     def GET(self):
         data = 0
         control = 0
-        conn = pymysql.connect(host='localhost', port=3306, user='root', passwd='', db='arduino')
+        conn = pymysql.connect(host='wp433upk59nnhpoh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com', port=3306, user='thcu5mxhm5bl35ry', passwd='pb9opvshqinr8sd8', db='k0gkgerhx1mejkf4')
         cur = conn.cursor()
 
         formulario = self.control()
@@ -40,7 +40,7 @@ class Arduino:
 
     def POST(self):
         control = 0
-        conn = pymysql.connect(host='localhost', port=3306, user='root', passwd='', db='arduino')
+        conn = pymysql.connect(host='wp433upk59nnhpoh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com', port=3306, user='thcu5mxhm5bl35ry', passwd='pb9opvshqinr8sd8', db='k0gkgerhx1mejkf4')
         cur = conn.cursor()
         formulario= self.control()
         if not formulario.validates():
